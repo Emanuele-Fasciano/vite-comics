@@ -13,12 +13,6 @@ export default {
         <div class="container">
             <p>Content goes here</p>
         </div>
-
-        <!-- <div class="card"
-                    v-for="icon in icons">
-                    <img :src="'../assets/buy-' + icon.img" alt="">
-                    <span>{{ icon.text }}</span>
-                </div> -->
     </section>
 </template>
 

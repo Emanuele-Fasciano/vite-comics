@@ -16,19 +16,19 @@ export default {
                 <span>DIGITAL COMICS</span>
             </div>
             <div class="card">
-                    <img src="../assets/buy-comics-digital-comics.png" alt="">
+                    <img src="../assets/buy-comics-merchandise.png" alt="">
                     <span>DC MERCHANDISE</span>
                 </div>
                 <div class="card">
-                    <img src="../assets/buy-comics-digital-comics.png" alt="">
+                    <img src="../assets/buy-comics-subscriptions.png" alt="">
                     <span>SUBSCRIPTION</span>
                 </div>
                 <div class="card">
-                    <img src="../assets/buy-comics-digital-comics.png" alt="">
+                    <img src="../assets/buy-comics-shop-locator.png" alt="">
                     <span>COMIC SHOP LOCATION</span>
                 </div>
                 <div class="card">
-                    <img src="../assets/buy-comics-digital-comics.png" alt="">
+                    <img src="../assets/buy-dc-power-visa.svg" alt="">
                     <span>DC POWER VISA</span>
                 </div>
         </div>
