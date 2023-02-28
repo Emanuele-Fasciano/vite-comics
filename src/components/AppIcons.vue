@@ -2,7 +2,16 @@
 export default {
     data() {
         return {
-
+            cards: [
+                {
+                    img:"../src/assets/buy-comics-digital-comics.png",
+                    text:"aa"
+                },
+                {
+                    img: "",
+                    text: ""
+                },
+            ]
         }
     }
 }
@@ -11,11 +20,12 @@ export default {
 <template>
     <section>
         <div class="container">
-            <div class="card">
-                <img src="../assets/buy-comics-digital-comics.png" alt="">
-                <span>DIGITAL COMICS</span>
+            <div class="card"
+                v-for="card in cards">
+                <img :src="card.img" alt="">
+                <span>{{ card.text }}</span>
             </div>
-            <div class="card">
+            <!-- <div class="card">
                     <img src="../assets/buy-comics-merchandise.png" alt="">
                     <span>DC MERCHANDISE</span>
                 </div>
@@ -30,7 +40,7 @@ export default {
                 <div class="card">
                     <img src="../assets/buy-dc-power-visa.svg" alt="">
                     <span>DC POWER VISA</span>
-                </div>
+                </div> -->
         </div>
         
     </section>

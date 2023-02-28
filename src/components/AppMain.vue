@@ -4,6 +4,10 @@ export default {
         return {
 
         }
+    },
+
+    promps:{
+        cards: Array
     }
 }
 </script>
@@ -11,18 +15,23 @@ export default {
 <template>
     <section>
         <div class="container">
-            <p>Content goes here</p>
+            <div class="card"
+                v-for="card in cards" :key="card.series">
+                <img :src="card.thumb" alt="">
+                
+            </div>
         </div>
     </section>
 </template>
 
 <style lang="scss" scoped> 
     section{
-        background-color: black;
+        height: 400px;
+        background-color: aquamarine;
 
-        p{
-            color: white;
-            padding: 5rem 0;
+        .card{
+            width: 15%; 
+            height: 100px;
         }
     }
 </style>
