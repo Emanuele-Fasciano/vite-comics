@@ -1,9 +1,11 @@
 <script>
 import AppHeader from './components/AppHeader.vue';
+import AppJumbotron from './components/AppJumbotron.vue';
 import AppMain from './components/AppMain.vue';
 import AppIcons from './components/AppIcons.vue';
 import AppFooter from './components/AppFooter.vue';
 import AppFollowUs from './components/AppFollowUs.vue';
+
 
 export default {
   data(){
@@ -98,6 +100,7 @@ export default {
   },
   components: {
     AppHeader,
+    AppJumbotron,
     AppMain,
     AppIcons,
     AppFooter,
@@ -108,6 +111,7 @@ export default {
 
 <template>
     <AppHeader/>
+    <AppJumbotron/>
     <AppMain :cards="cardsList"/>
     <AppIcons/>
     <AppFooter/>

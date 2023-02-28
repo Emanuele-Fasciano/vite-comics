@@ -4,12 +4,24 @@ export default {
         return {
             cards: [
                 {
-                    img:"../src/assets/buy-comics-digital-comics.png",
-                    text:"aa"
+                    img:"comics-digital-comics.png",
+                    text:"DIGITAL COMICS"
                 },
                 {
-                    img: "",
-                    text: ""
+                    img: "comics-merchandise.png",
+                    text: "DC MERCHANDISE"
+                },
+                {
+                    img: "comics-subscriptions.png",
+                    text: "SUBSCRIPTION"
+                },
+                {
+                    img: "comics-shop-locator.png",
+                    text: "COMIC SHOP LOCATOR"
+                },
+                {
+                    img: "dc-power-visa.svg",
+                    text: "DC POWER VISA"
                 },
             ]
         }
@@ -22,7 +34,7 @@ export default {
         <div class="container">
             <div class="card"
                 v-for="card in cards">
-                <img :src="card.img" alt="">
+                <img :src="'../src/assets/buy-' + card.img " alt="">
                 <span>{{ card.text }}</span>
             </div>
             <!-- <div class="card">
