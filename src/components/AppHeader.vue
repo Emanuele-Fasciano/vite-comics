@@ -2,59 +2,12 @@
 export default{
     data(){
         return{
-            headerLinks:[
-                {
-                    label: "CHARACTERS",
-                    link: "#",
-                    active: false
-                },
-                {
-                    label: "COMICS",
-                    link: "#",
-                    active: false
-                },
-                {
-                    label: "MOVIES",
-                    link: "#",
-                    active: false
-                },
-                {
-                    label: "TV",
-                    link: "#",
-                    active: false
-                },
-                {
-                    label: "GAMES",
-                    link: "#",
-                    active: false
-                },
-                {
-                    label: "COLLECTIBLES",
-                    link: "#",
-                    active: false
-                },
-                {
-                    label: "VIDEOS",
-                    link: "#",
-                    active: false
-                },
-                {
-                    label: "FANS",
-                    link: "#",
-                    active: false
-                },
-                {
-                    label: "NEWS",
-                    link: "#",
-                    active: false
-                },
-                {
-                    label: "SHOP",
-                    link: "#",
-                    active: false
-                },
-            ]
+            
         }
+    },
+
+    props: {
+        links: Array
     }
 }
 </script>
@@ -63,7 +16,7 @@ export default{
  <header class="container">
     <img src="../assets/dc-logo.png" alt="">
     <ul>
-        <li v-for="link in headerLinks" :key="headerLinks.label"
+        <li v-for="link in links" :key="links.label"
             @mouseover="link.active = true"
             @mouseleave="link.active = false"
             :class="(link.active == true) ? 'active' : ''">
